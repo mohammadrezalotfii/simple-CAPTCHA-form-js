@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section#main {
+  width: 600px;
+  height: 400px;
+  background-color: rgb(151, 174, 240);
+  display: flex;
+  border-radius: 8px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: start;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+section#info {
+  height: 100%;
+  background: url(../media/Carretera.jfif) no-repeat center center/cover;
+  opacity: 100%;
+  width: 100%;
+}
+
+section#info > div {
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+section#info > div > h2 {
+  font-size: 24px;
+  padding: 0px 0px 48px 0px;
+  color: white;
+}
+
+section#info > div > p {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 36px 0px 0px 0px;
+  text-align: justify;
+  color: white;
+}
+
+section#inputs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 20px;
+}
+
+section#inputs > label {
+  width: 100%;
+  text-align: left;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+section#inputs > div:nth-of-type(1) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0px;
+}
+
+section#inputs > div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+section#inputs > div > button:nth-of-type(1) {
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 12px;
+  border: unset;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #2b6abd;
+  color: white;
+  box-shadow: 0px 0px 12px #2b6abd54;
+  cursor: pointer;
+}
+
+section#inputs > div > button:nth-of-type(2) {
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border: unset;
+    border-radius: 8px;
+    background-color: #ffffff00;
+    color: #2b6abd;
+    border: 2px solid #2b6abd;
+    box-shadow: 0px 0px 12px #2b6abd54;
+    cursor: pointer;
+  }
+  
+
+section#inputs > button:hover {
+    box-shadow: 0px 0px 8px #2b6abd77;
+}
+
+section#inputs > label > span {
+  color: red;
+}
+
+section#inputs > input {
+  border: unset;
+  border-radius: 8px;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  display: block;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.11);
+  background-color: #f7f7f7;
+}
+
+section#inputs > input::placeholder {
+  color: #c7c7c7;
+}
+
+section#inputs > input:focus {
+  outline: unset;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.363);
+}
+
+#capcha {
+    width: 100px ;
+    height: 44px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+#alertFname {
+    width: initial;
+    height: 44px;
+    border-radius: 8px;
+    background-color: rgb(168, 32, 32);
+    display:none;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 24px;
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 16px;
+    left: -100%;
+}
+
+#alertLname {
+    width: initial;
+    height: 44px;
+    border-radius: 8px;
+    background-color: rgb(168, 32, 32);
+    display:none;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 24px;
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 16px;
+    left: -100%;
+}
+
+#alertCapcha {
+    width: initial;
+    height: 44px;
+    border-radius: 8px;
+    background-color: rgb(168, 32, 32);
+    display:none;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 24px;
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 16px;
+    left: -100%;
+}
