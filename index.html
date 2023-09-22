@@ -7,51 +7,53 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div id="notif">
-      <div id="alertFname">
-        <p>Your first name does not exist in the database. Try again.</p>
-      </div>
-      <div id="alertLname">
-        <p>Your last name does not exist in the database. Try again.</p>
-      </div>
-      <div id="alertCapcha">
-        <p>Your answer is not correct. Try again.</p>
-      </div>
-    </div>
-    <section id="main">
-      <section id="inputs">
-        <label for="fname">Enter your first name <span>*</span></label>
-        <input type="text" name="" id="fname" placeholder="mohammadreza" />
-        <label for="lname">Enter your last name <span>*</span></label>
-        <input type="text" name="" id="lname" placeholder="lotfi" />
-        <div>
-            <p>capcha : </p>
-            <div id="capcha"></div>
+    <section>
+      <div id="notif">
+        <div id="alertFname">
+          <p>Your first name does not exist in the database. Try again.</p>
         </div>
-        <input
-          type="text"
-          name=""
-          id="number"
-          placeholder="answer capcha question"
-        />
-        <div>
-          <button id="submit">log in</button>
-          <button id="reset">Reset</button>
+        <div id="alertLname">
+          <p>Your last name does not exist in the database. Try again.</p>
         </div>
-      </section>
-      <section id="info">
-        <div>
-          <h2>Welcom to your world</h2>
-          <p>
-            This website is for entering the world of your choice. You can enter
-            your own world by using your first and last name. <br /><br />
-            Indeed! To enter the world of your choice, you must first pass the
-            robotics test to make sure that you are not a robot and will not
-            harm us!! ¬_¬
-            <br /><br />
-            Enjoy your world:>
-          </p>
+        <div id="alertCapcha">
+          <p>Your answer is not correct. Try again.</p>
         </div>
+      </div>
+      <section id="main">
+        <section id="inputs">
+          <label for="fname">Enter your first name <span>*</span></label>
+          <input type="text" name="" id="fname" placeholder="mohammadreza" />
+          <label for="lname">Enter your last name <span>*</span></label>
+          <input type="text" name="" id="lname" placeholder="lotfi" />
+          <div>
+              <p id="textt">capcha : </p>
+              <div id="capcha"></div>
+          </div>
+          <input
+            type="text"
+            name=""
+            id="number"
+            placeholder="answer capcha question"
+          />
+          <div>
+            <button id="submit">log in</button>
+            <button id="reset">Reset</button>
+          </div>
+        </section>
+        <section id="info">
+          <div>
+            <h2>Welcom to your world</h2>
+            <p>
+              This website is for entering the world of your choice. You can enter
+              your own world by using your first and last name. <br /><br />
+              Indeed! To enter the world of your choice, you must first pass the
+              robotics test to make sure that you are not a robot and will not
+              harm us!! ¬_¬
+              <br /><br />
+              Enjoy your world:>
+            </p>
+          </div>
+        </section>
       </section>
     </section>
 

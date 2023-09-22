@@ -4,10 +4,24 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(../media/zetong-li-XiDwrsQ3kp4-unsplash.jpg) no-repeat center
+    center/cover;
+  overflow: hidden;
+}
+
+body > section {
+  width: 100%;
+  height: 2000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: -24px;
+}
 section#main {
   width: 600px;
   height: 400px;
-  background-color: rgb(151, 174, 240);
+  background-image: linear-gradient(45deg , #000000, #0f519c);
   display: flex;
   border-radius: 8px;
   flex-direction: row-reverse;
@@ -30,10 +44,10 @@ section#info {
 }
 
 section#info > div {
-    width: inherit;
-    height: inherit;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
 }
 
 section#info > div > h2 {
@@ -65,21 +79,22 @@ section#inputs > label {
   display: block;
   margin-bottom: 8px;
   font-size: 16px;
+  color: white;
 }
 
 section#inputs > div:nth-of-type(1) {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 8px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0px;
 }
 
 section#inputs > div:nth-of-type(2) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 section#inputs > div > button:nth-of-type(1) {
@@ -91,31 +106,30 @@ section#inputs > div > button:nth-of-type(1) {
   border: unset;
   font-weight: 600;
   border-radius: 8px;
-  background-color: #2b6abd;
-  color: white;
-  box-shadow: 0px 0px 12px #2b6abd54;
+  background-color: hsl(214, 100%, 59%);
+  color: #ffffff;
+  box-shadow: 0px 0px 12px #ffffff54;
   cursor: pointer;
 }
 
 section#inputs > div > button:nth-of-type(2) {
-    height: 40px;
-    width: 100px;
-    text-align: center;
-    margin-bottom: 8px;
-    font-size: 12px;
-    font-weight: 600;
-    border: unset;
-    border-radius: 8px;
-    background-color: #ffffff00;
-    color: #2b6abd;
-    border: 2px solid #2b6abd;
-    box-shadow: 0px 0px 12px #2b6abd54;
-    cursor: pointer;
-  }
-  
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border: unset;
+  border-radius: 8px;
+  background-color: #ffffff00;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 0px 12px #ffffff54;
+  cursor: pointer;
+}
 
 section#inputs > button:hover {
-    box-shadow: 0px 0px 8px #2b6abd77;
+  box-shadow: 0px 0px 8px #2b6abd77;
 }
 
 section#inputs > label > span {
@@ -148,13 +162,13 @@ section#inputs > input:focus {
 }
 
 #capcha {
-    width: 100px ;
-    height: 44px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
+  width: 100px;
+  height: 44px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
 }
 
 #notif {
@@ -167,52 +181,56 @@ section#inputs > input:focus {
 }
 
 #alertFname {
-    width: initial;
-    height: 44px;
-    border-radius: 8px;
-    background-color: rgb(168, 32, 32);
-    display:none;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 24px;
-    color: white;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  width: initial;
+  height: 44px;
+  border-radius: 8px;
+  background-color: rgb(168, 32, 32);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 24px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    font-size: 14px;
-    top: 16px;
-    left: 16px;
+  font-size: 14px;
+  top: 16px;
+  left: 16px;
 }
 
 #alertLname {
-    width: initial;
-    height: 44px;
-    border-radius: 8px;
-    background-color: rgb(168, 32, 32);
-    display:none;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 24px;
-    color: white;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  width: initial;
+  height: 44px;
+  border-radius: 8px;
+  background-color: rgb(168, 32, 32);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 24px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    font-size: 14px;
-    top: 16px;
-    left: 16px;
+  font-size: 14px;
+  top: 16px;
+  left: 16px;
 }
 
 #alertCapcha {
-    width: initial;
-    height: 44px;
-    border-radius: 8px;
-    background-color: rgb(168, 32, 32);
-    display:none;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 24px;
-    color: white;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  width: initial;
+  height: 44px;
+  border-radius: 8px;
+  background-color: rgb(168, 32, 32);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 24px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    font-size: 14px;
-    top: 16px;
-    left: 16px;
+  font-size: 14px;
+  top: 16px;
+  left: 16px;
+}
+
+#textt {
+  color: white;
 }
