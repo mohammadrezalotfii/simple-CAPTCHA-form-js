@@ -25,10 +25,12 @@ btn.addEventListener("click", function () {
       } else {
         alertCapcha.style.display = "inline-flex";
         alertCapcha.style.left = 16 + "px";
-      }
+      return true;
+    }
     } else {
       alertLname.style.display = "inline-flex";
       alertLname.style.left = 16 + "px";
+      return true;
     }
   } else if (fname.value == fname2) {
     if (lname.value == lname2) {
@@ -45,5 +47,6 @@ btn.addEventListener("click", function () {
   } else {
     alertFname.style.display = "inline-flex";
     alertFname.style.left = 16 + "px";
+    return 0;
   }
 });

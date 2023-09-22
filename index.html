@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div id="alertFname">
-      <p>Your first name does not exist in the database. Try again.</p>
-    </div>
-    <div id="alertLname">
-      <p>Your last name does not exist in the database. Try again.</p>
-    </div>
-    <div id="alertCapcha">
-      <p>Your answer is not correct. Try again.</p>
+    <div id="notif">
+      <div id="alertFname">
+        <p>Your first name does not exist in the database. Try again.</p>
+      </div>
+      <div id="alertLname">
+        <p>Your last name does not exist in the database. Try again.</p>
+      </div>
+      <div id="alertCapcha">
+        <p>Your answer is not correct. Try again.</p>
+      </div>
     </div>
     <section id="main">
       <section id="inputs">
@@ -23,7 +25,7 @@
         <label for="lname">Enter your last name <span>*</span></label>
         <input type="text" name="" id="lname" placeholder="lotfi" />
         <div>
-            <p>Recapcha : </p>
+            <p>capcha : </p>
             <div id="capcha"></div>
         </div>
         <input

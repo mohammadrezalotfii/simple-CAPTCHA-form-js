@@ -157,6 +157,15 @@ section#inputs > input:focus {
     border-radius: 8px;
 }
 
+#notif {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0px;
+  margin: 16px;
+}
+
 #alertFname {
     width: initial;
     height: 44px;
@@ -170,9 +179,8 @@ section#inputs > input:focus {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
     font-size: 14px;
-    position: absolute;
     top: 16px;
-    left: -100%;
+    left: 16px;
 }
 
 #alertLname {
@@ -188,9 +196,8 @@ section#inputs > input:focus {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
     font-size: 14px;
-    position: absolute;
     top: 16px;
-    left: -100%;
+    left: 16px;
 }
 
 #alertCapcha {
@@ -206,7 +213,6 @@ section#inputs > input:focus {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
     font-size: 14px;
-    position: absolute;
     top: 16px;
-    left: -100%;
+    left: 16px;
 }
